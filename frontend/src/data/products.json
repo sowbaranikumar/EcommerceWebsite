@@ -1,0 +1,26 @@
+{
+  "Electronics": [
+    { "id": 1, "name": "Laptop", "price": 800 },
+    { "id": 2, "name": "Headphones", "price": 100 },
+    { "id": 3, "name": "Smartphone", "price": 600 },
+    { "id": 4, "name": "Camera", "price": 500 },
+    { "id": 5, "name": "Smartwatch", "price": 200 },
+    { "id": 6, "name": "Speaker", "price": 150 }
+  ],
+  "Clothes": [
+    { "id": 7, "name": "T-Shirt", "price": 20 },
+    { "id": 8, "name": "Jeans", "price": 40 },
+    { "id": 9, "name": "Jacket", "price": 60 },
+    { "id": 10, "name": "Shoes", "price": 50 },
+    { "id": 11, "name": "Hat", "price": 15 },
+    { "id": 12, "name": "Socks", "price": 10 }
+  ],
+  "Kitchen": [
+    { "id": 13, "name": "Mixer", "price": 70 },
+    { "id": 14, "name": "Toaster", "price": 30 },
+    { "id": 15, "name": "Knife Set", "price": 40 },
+    { "id": 16, "name": "Pan", "price": 25 },
+    { "id": 17, "name": "Coffee Maker", "price": 80 },
+    { "id": 18, "name": "Blender", "price": 50 }
+  ]
+}

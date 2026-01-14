@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "TechHub Electronics",
+    "category": "Electronics",
+    "status": "InStock"
+  },
+  {
+    "id": 2,
+    "name": "Urban Fashion",
+    "category": "Clothing",
+    "status": "InStock"
+  },
+  {
+    "id": 3,    
+    "name": "Daily Needs Mart",
+    "category": "Groceries",
+    "status": "In Stock"
+  },
+  {
+    "id": 4,
+    "name": "Glow Cosmetics",
+    "category": "Cosmetics",
+    "status": "Out of Stock"
+  },
+  {
+    "id": 5,
+    "name": "HomeStyle Decor",
+    "category": "Home Decor",
+    "status": "In Stock"
+  }
+]

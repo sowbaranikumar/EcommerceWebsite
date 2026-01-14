@@ -6,33 +6,27 @@ import {
   PrimaryKey,
   AutoIncrement,
   AllowNull,
+  HasMany,
 } from "sequelize-typescript";
-
 @Table({
-  tableName: "users",
+  tableName: "products",
   timestamps: true,
 })
-export class User extends Model{
+export class Product extends Model {
   @PrimaryKey
   @AutoIncrement
-  @Column(DataType.INTEGER.UNSIGNED)
+  @Column(DataType.INTEGER)
   id!: number;
   
   @AllowNull(false)
   @Column(DataType.STRING)
-  email!: string;
+  name!: string;
+
+  @AllowNull(false)
+  @Column(DataType.DECIMAL(10,2))
+  price!: number;
 
   @AllowNull(false)
   @Column(DataType.STRING)
-  password!: string;
-
-  @AllowNull(false)
-  @Column(DataType.STRING)
-  role!: "ADMIN" | "CUSTOMER";
-
-   @AllowNull(true)
-   @Column(DataType.STRING)
-   refreshToken?:string;
-
-
+  category!: string; 
 }

@@ -6,17 +6,27 @@ import {
   PrimaryKey,
   AutoIncrement,
   AllowNull,
+  ForeignKey,
+  BelongsTo,
+  HasMany,
 } from "sequelize-typescript";
 
 @Table({
-  tableName: "users",
+  tableName: "customers",
   timestamps: true,
 })
-export class User extends Model{
+export class Customer extends Model {
   @PrimaryKey
   @AutoIncrement
   @Column(DataType.INTEGER.UNSIGNED)
   id!: number;
+
+  @Column(DataType.INTEGER)
+  storeId!: number;
+
+  @AllowNull(false)
+  @Column(DataType.STRING)
+  name!:string;
   
   @AllowNull(false)
   @Column(DataType.STRING)
@@ -24,15 +34,10 @@ export class User extends Model{
 
   @AllowNull(false)
   @Column(DataType.STRING)
-  password!: string;
+  phone!: string;
 
   @AllowNull(false)
-  @Column(DataType.STRING)
-  role!: "ADMIN" | "CUSTOMER";
-
-   @AllowNull(true)
-   @Column(DataType.STRING)
-   refreshToken?:string;
-
+  @Column(DataType.ENUM("Active","Inactive"))
+  status!: "Inactive" | "Active";
 
 }
